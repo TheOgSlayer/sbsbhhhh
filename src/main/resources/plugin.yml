@@ -1,0 +1,18 @@
+name: JalebiScoreboard
+main: smp.jalebi.scoreboard.JalebiScoreboard
+version: 1.0.0
+api-version: '1.21'
+softdepend: [Vault]
+description: Custom sidebar scoreboard for JALEBI SMP
+commands:
+  scoreboard:
+    description: Open the scoreboard settings menu
+    aliases: [sb]
+    usage: /scoreboard
+  shards:
+    description: Manage player shards (admin)
+    usage: /shards <give|take|set|check> <player> [amount]
+    permission: jalebi.shards.admin
+permissions:
+  jalebi.shards.admin:
+    default: op
